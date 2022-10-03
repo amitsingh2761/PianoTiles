@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background: white;
+    height: 55px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+}
+
+nav span{
+    color: orangered;
+    padding-right: 20px;
+}
+
+a{
+  color:rgb(49, 107, 146);
+  font-weight: 500;
+  line-height: 60px;
+  margin: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+}
+
+li a:hover{
+    background: rgb(62, 119, 158);
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:rgb(49, 107, 146);
+    margin: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media screen and (max-width: 680px){
+   h2{
+        font-size: 40px;
+    }
+    
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgb(49, 107, 146);
+        color: white;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+       
+    }
+    nav ul li a{
+        color: white;
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    li a:hover{
+        background: white;
+        color: rgb(62, 119, 158);
+        font-size: 30px;
+        border-radius: 8px;
+        padding: 2px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 680px){
+    
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Games - Piano Tiles</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="app.js"></script>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+       <label for="" id="logo"><h2><a href="index.html">Piano<span>Tiles</span></a></h2></label>
+        <ul>
+          
+            <li><a href="instruction.html">Instructions</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <script src="https://kit.fontawesome.com/c31b1d59ca.js" crossorigin="anonymous"></script>
+  <div class="score" id="score">
+   
+  </div>
+  <div class="canvasContainer wrapper">
+   
+    <div class="gameEnd none" id="gameEnd">
+      Opps! Wrong Tile
+      <br/>
+      <div class="total"></div>
+      <button onclick="restartGame()" class="game-btn">Restart Game</button>
+    </div>
+    
+
+
+
+    <div class="gameStart" id="gameStart">
+     <span class="abd"> Piano Tiles</span> 
+      <br/>
+      <button onclick="startGame()" class="game-btn">Start Game</button>
+    </div>
+    <canvas class="game" id="gameCanvas"></canvas>
+  </div>
+
+
+ 
+</body>
+</html>
